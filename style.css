@@ -188,7 +188,7 @@ hr{
     align-items: center;
 }   
 .main-container .container{
-    height: 90vh;
+    height: 110vh;
     width: 60%;
     display: grid;
     overflow: hidden;
@@ -364,6 +364,9 @@ footer p{
     }
     .main{
         width: 100%;
+    }
+    .main-container{
+        margin-bottom: 50px;
     }
     .main-container .container{
         width: 95%;
