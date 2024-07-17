@@ -25,13 +25,10 @@
     display: grid;
     gap: 10px;
     place-items: center;
-    border-right: 1px solid rgba(128, 128, 128, 0.363);
-    
+    border-right: 1px solid rgba(128, 128, 128, 0.363); 
     position: sticky;
     left: 0;
     top: 0;
-
-    
 }
 .logo{
     padding-inline: 20px;
@@ -279,7 +276,7 @@ hr{
     max-height:30px;
 }
 
-/**/
+/*-----suggestions----*/
 
 .suggestions{
     height: 100vh;
@@ -298,7 +295,6 @@ hr{
 }
 .suggestions-header p{
     color: gray;
-
 }
 
 .suggestions ul{
@@ -358,9 +354,6 @@ footer p{
     margin-top:15px ;
 }
 
-.footer{
-    display: none;
-}
 
 @media screen and (max-width:700px){
     #container{
@@ -383,20 +376,17 @@ footer p{
     }
     .footer{
         display: initial;
-        position: fixed;
-        bottom: 0;
-        height: 50px;
+        position: sticky;
+        bottom: 0;  
         width: 100%;
-        background-color: white;
-
     }
     .footer ul{
         display: flex;
         justify-content: space-evenly;
         list-style: none;
         align-items: center;
-        height: 100%;
-       
+        height: 50px;
+        background: white; 
     }
     .name-container{
         display: flex;
@@ -429,6 +419,6 @@ footer p{
         place-items: center;
     }
     .name-container .fa-heart{
-        font-size: 20px;
+        font-size: 25px;
     }
 }
