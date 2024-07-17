@@ -9,19 +9,18 @@
     text-decoration: none;
    
 }
-.container{
+#container{
     display: flex;
     flex-direction: row;
     min-height: 100vh;
     width: 100%;
-
 }
 .name-container{
     display: none;
 }
 .sideBar{
     padding: 10px;
-    width: 22%;
+    width: 18%;
     height: 100vh;
     display: grid;
     gap: 10px;
@@ -119,7 +118,7 @@ hr{
 
 .main{
     height: auto;
-    width: 55%;
+    width: 54%;
 }
 .header-container{
     width: 100%;
@@ -127,12 +126,12 @@ hr{
     flex-direction: column;
     align-items: center;
 }
-.header{
+.header-container .header{
     display: flex;
     align-items: center;
     gap: 16px;
     box-sizing: content-box;
-    width: 80%;
+    width: 82%;
     height: 150px;
     overflow-y: hidden;
     overflow-x:auto ; 
@@ -184,13 +183,15 @@ hr{
 
 
 .main-container{
-    height: 110vh;
+    min-height: 110vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
+    align-items: center;
+}   
 .main-container .container{
-    height: 100%;
+    height: 90vh;
     width: 60%;
     display: grid;
     overflow: hidden;
@@ -275,13 +276,14 @@ hr{
 .description{
     font-size: small;
     padding-inline: 10px;
+    max-height:30px;
 }
 
 /**/
 
 .suggestions{
     height: 100vh;
-    width: 40%;
+    width: 28%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -355,12 +357,13 @@ footer p{
     font-size: small;
     margin-top:15px ;
 }
+
 .footer{
     display: none;
 }
 
 @media screen and (max-width:700px){
-    .container{
+    #container{
         flex-direction: column;
     }
     .suggestions{
@@ -374,6 +377,9 @@ footer p{
     }
     .sideBar{
         display: none;
+    }
+    .header-container .header{
+        width: 98%;
     }
     .footer{
         display: initial;
