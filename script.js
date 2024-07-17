@@ -2,18 +2,17 @@
 let popUp = document.getElementById("popUp");
 let element = document.getElementById('buttons-more');
 
-var count = 0;
+var ispopUp = false;
 element.addEventListener("click", (e)=>{
 
     popUp.style.display="flex";
     console.log("working")
-    count++;
+    ispopUp = !ispopUp;
     
-    if(count === 2){
-
+    if(ispopUp){
         popUp.style.display="none"
-        count = 0;
     }
+    
 })
 
 function like(e){
